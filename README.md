@@ -1,1 +1,1 @@
-# Getting-MEAN
+# Getting MEAN

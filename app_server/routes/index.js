@@ -2,7 +2,18 @@
 
 var express = require('express');
 var router = express.Router();
-var ctrlMain = require('../controllers/main');
+// var ctrlMain = require('../controllers/main');
+
+var ctrlLocations = require('../controllers/locations');
+var ctrlOthers = require('../controllers/others');
+
+// Locations pages
+router.get('/', ctrlLocations.homelist);
+router.get('/location', ctrlLocations.locationInfo);
+router.get('/location/review/new', ctrlLocations.addReview);
+
+// Other pages
+router.get('/about', ctrlOthers.about);
 
 // Created a named function, and then passed it
 // through as a callback in the route definition.
@@ -14,8 +25,6 @@ var ctrlMain = require('../controllers/main');
 // }
 
 /* GET home page. */
-router.get('/', ctrlMain.index);
-
-
+// router.get('/', ctrlMain.index);
 
 module.exports = router;

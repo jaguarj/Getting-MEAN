@@ -4,3 +4,4 @@
 .reviewAuthor {margin: 0 5px;}
 .reviewTimestamp {color: #ccc;}
 .label-warning {margin-right: .5rem;}
+span.label.label-warning {padding-right: 20px;}

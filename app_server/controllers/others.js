@@ -1,4 +1,4 @@
-// Controller
+// app_server Controller
 
 // GET About page
 module.exports.about = function(req, res){

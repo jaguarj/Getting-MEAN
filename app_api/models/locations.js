@@ -1,4 +1,4 @@
-var mongoose = require( 'mongoose' );
+var mongoose = require('mongoose');
 
 
 var reviewSchema = new mongoose.Schema ({
@@ -7,6 +7,7 @@ var reviewSchema = new mongoose.Schema ({
 	reviewText: String,
 	createdOn: {type: Date, default: Date.now}
 });
+
 
 
 var openingTimeSchema = new mongoose.Schema ({
